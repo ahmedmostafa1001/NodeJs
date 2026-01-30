@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numbers Page</h1>
+    <p>This is a dynamic EJS file served by Express.js</p>
+
+    <!-- Displaying a list of numbers passed from the server -->
+    <ul style="background-color: #f0f0f0; padding: 10px;">
+        <% numbers.forEach(function(number) { %>
+            <li><%= number %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
